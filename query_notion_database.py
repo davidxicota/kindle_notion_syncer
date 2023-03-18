@@ -61,6 +61,9 @@ def get_list_of_paragraphs_for_page_with_title(title):
         elif 'callout' in item.keys():
             for words in item['callout']['rich_text']:
                 stringer = (words['plain_text'], "note")
+        else:
+            stringer = ""
+        
 
         paragraphs.append(stringer)
 
